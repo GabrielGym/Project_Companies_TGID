@@ -1,0 +1,48 @@
+Projeto Companies Teste 1 Da TGID
+
+Este é um projeto de API desenvolvido em JAVA com Spring Boot que oferece funcionalidades simples de criação e gerenciamento de empresas e clientes.
+
+Funcionalidades Principais
+Saldo da Empresa
+O saldo da empresa é afetado pelas transações dos clientes. Aqui estão as regras de cálculo:
+
+Cada saque efetuado por um cliente resulta em um desconto de 5% no saldo da empresa.
+Cada depósito feito por um cliente resulta em um desconto de 3% no saldo da empresa.
+
+Rotas dos Clientes
+
+Criação de Clientes
+POST(http://localhost:8082/clients): Rota para criar novos clientes.
+
+Consulta de Clientes
+GET(http://localhost:8082/clients): Rota para obter todos os clientes.
+
+GET(http://localhost:8082/clients/id): Rota para obter informações de um cliente específico.
+
+Transações de Clientes
+POST(http://localhost:8082/clients/id/deposit): Rota para criar um novo depósito para um cliente.
+POST(http://localhost:8082/clients/id/loot): Rota para criar um novo saque para um cliente.
+
+Rotas das Empresas
+
+Criação de Empresas
+POST(http://localhost:8082/companies): Rota para criar novas empresas.
+
+Consulta de Empresas
+GET(http://localhost:8082/companies): Rota para obter todas as empresas.
+
+GET(http://localhost:8082/companies/id): Rota para obter informações de uma empresa específica.
+
+Como Executar o Servidor
+Para rodar o servidor, siga estas etapas:
+
+Abra o terminal na pasta "companies".
+Execute o comando mvn spring-boot:run.
+Após iniciar o servidor, recomendamos instalar o aplicativo Insomnia em seu computador. Todas as rotas estão pré-configuradas e prontas para testes.
+
+Contato
+Se você tiver alguma dúvida ou precisar de assistência adicional, não hesite em entrar em contato:
+
+Email: biel.ferreira12342@gmail.com
+LinkedIn: https://www.linkedin.com/in/dev-gabriel19/
+Telefone/WhatsApp: 11945316087
